@@ -1,4 +1,8 @@
 Bookmarks::Application.routes.draw do
+
+  devise_for :users
+  root :to => 'bookmarks#index'
+
   resources :bookmarks
 
   # The priority is based upon order of creation: first created -> highest priority.
