@@ -1,0 +1,9 @@
+%h2 Latest Bookmarks
+%table{:style => "width: 100%"}
+  %thead
+    %tr
+      %th Url
+  %tbody
+    - @bookmarks.each do |bookmark|
+      %tr
+        %td= link_to bookmark.title, bookmark.url

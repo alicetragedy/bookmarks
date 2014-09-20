@@ -10,6 +10,10 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.2'
 gem 'haml-rails'
 
+gem 'zurb-foundation', '~> 4.2.2'
+
+gem 'simple_form'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -33,6 +37,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem "erb2haml"
 end
 
 # Use ActiveModel has_secure_password
